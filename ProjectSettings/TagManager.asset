@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: wayback
+    uniqueID: 2622192681
+    locked: 0
+  - name: outBack
+    uniqueID: 4242681447
+    locked: 0
+  - name: Me
+    uniqueID: 428054751
+    locked: 0
+  - name: hipNLip
+    uniqueID: 959605483
+    locked: 0
+  - name: lineLeader
+    uniqueID: 1073663703
+    locked: 0
