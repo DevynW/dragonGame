@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Moving : MonoBehaviour
+
+public class moveReticle : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] bool reticleLine;
@@ -44,11 +45,12 @@ public class Moving : MonoBehaviour
                 transform.position = new Vector3(Minx, transform.position.y, 0); //bounding the movement
             }
         }
-       if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             AudioSource audioSource = GetComponent<AudioSource>();
             audioSource.Play();
         }
-        
+
     }
+
 }

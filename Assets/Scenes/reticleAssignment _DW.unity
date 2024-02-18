@@ -179,7 +179,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1235721855
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.7104397, g: 0.79789734, b: 0.9716981, a: 1}
@@ -217,8 +217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 65594226}
   - component: {fileID: 65594225}
-  - component: {fileID: 65594227}
   - component: {fileID: 65594228}
+  - component: {fileID: 65594229}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -265,7 +265,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1396248493
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -293,24 +293,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &65594227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65594224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8a5769aa805184ea53dfa217c71061, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  reticleLine: 0
-  Maxy: 4.95
-  Miny: -4.95
-  Maxx: 6.6
-  Minx: -6.6
 --- !u!82 &65594228
 AudioSource:
   m_ObjectHideFlags: 0
@@ -407,6 +389,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &65594229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65594224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e2fcb07a83bfd4abe094e10e6b49d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  reticleLine: 0
+  Maxy: 4.87
+  Miny: -4.87
+  Maxx: 6.52
+  Minx: -6.52
 --- !u!1001 &185533478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -574,8 +574,8 @@ GameObject:
   m_Component:
   - component: {fileID: 902036813}
   - component: {fileID: 902036812}
-  - component: {fileID: 902036814}
   - component: {fileID: 902036815}
+  - component: {fileID: 902036816}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -622,7 +622,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1396248493
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -650,24 +650,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &902036814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902036811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8a5769aa805184ea53dfa217c71061, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  reticleLine: 1
-  Maxy: 4.94
-  Miny: -4.94
-  Maxx: 4.94
-  Minx: -4.94
 --- !u!82 &902036815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -764,6 +746,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &902036816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902036811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e2fcb07a83bfd4abe094e10e6b49d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  reticleLine: 1
+  Maxy: 4.87
+  Miny: -4.87
+  Maxx: 4.9
+  Minx: -4.9
 --- !u!1001 &2141170684
 PrefabInstance:
   m_ObjectHideFlags: 0
