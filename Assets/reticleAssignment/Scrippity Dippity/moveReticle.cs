@@ -5,11 +5,11 @@ using UnityEngine;
 public class moveReticle : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] bool reticleLine;
     [SerializeField] float Maxy;
     [SerializeField] float Miny;
     [SerializeField] float Maxx;
     [SerializeField] float Minx;
+    [SerializeField] GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +19,7 @@ public class moveReticle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (reticleLine == true)
-        {
+        
             float y = Input.GetAxis("Vertical");
             transform.Translate(speed * Time.deltaTime * y * Vector3.up, Space.World);
             if (transform.position.y > Maxy)
@@ -31,9 +30,7 @@ public class moveReticle : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x, Miny, 0); //bounding the movement
             }
-        }
-        if (reticleLine == false)
-        {
+       
             float x = Input.GetAxis("Horizontal");
             transform.Translate(speed * Time.deltaTime * x * Vector3.right, Space.World);
             if (transform.position.x > Maxx)
@@ -44,11 +41,13 @@ public class moveReticle : MonoBehaviour
             {
                 transform.position = new Vector3(Minx, transform.position.y, 0); //bounding the movement
             }
-        }
+        
         if (Input.GetButtonDown("Fire1"))
         {
             AudioSource audioSource = GetComponent<AudioSource>();
             audioSource.Play();
+            Instantiate(explosion, transform.position, transform.rotation);
+            
         }
 
     }
