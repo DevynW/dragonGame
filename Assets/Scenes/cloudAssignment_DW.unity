@@ -270,7 +270,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1235721855
+  m_SortingLayerID: -1672774615
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -294,7 +294,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.45, y: 9.9875, z: 1}
+  m_LocalScale: {x: 18.38, y: 9.9875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -307,6 +307,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 285945305793000324, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
+      propertyPath: endScreen
+      value: -14.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 285945305793000324, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
+      propertyPath: cloudPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 285945305793000324, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
+      propertyPath: startScreen
+      value: 14.35
+      objectReference: {fileID: 0}
     - target: {fileID: 3209572725540127111, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.77
@@ -347,14 +359,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 7674760226168948474, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7674760226168948474, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 168726015
-      objectReference: {fileID: 0}
     - target: {fileID: 8318818415350700962, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: m_Name
       value: cloud (1)
@@ -372,13 +376,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4497872041816278661, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
+    - target: {fileID: 285945305793000324, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: endScreen
-      value: -12.58
+      value: -14.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 285945305793000324, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
+      propertyPath: cloudPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 285945305793000324, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
+      propertyPath: startScreen
+      value: 14.35
       objectReference: {fileID: 0}
     - target: {fileID: 3209572725540127111, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1
+      value: -4.22
       objectReference: {fileID: 0}
     - target: {fileID: 3209572725540127111, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -415,14 +427,6 @@ PrefabInstance:
     - target: {fileID: 3209572725540127111, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 7674760226168948474, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7674760226168948474, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 168726015
       objectReference: {fileID: 0}
     - target: {fileID: 8318818415350700962, guid: c64eab4b3f5fab64cbf39e078019ca3b, type: 3}
       propertyPath: m_Name

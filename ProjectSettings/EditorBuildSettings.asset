@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/cloudAssignment_DW.unity
+    guid: 7985c514f4ccd6044926579b06023099
+  - enabled: 0
+    path: Assets/Scenes/dragonGame_DW.unity
+    guid: bd7612c802d81544ca5bac67ae05abe7
+  - enabled: 1
+    path: Assets/Scenes/explosionAssignment _DW 1.unity
+    guid: 6012673e744636c4785990524a9a1064
+  - enabled: 0
+    path: Assets/Scenes/reticleAssignment _DW.unity
+    guid: a4fe2f89b8fe84043af364a1fc26282b
   m_configObjects: {}
