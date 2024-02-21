@@ -6,7 +6,8 @@ public class movingMomma : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float Maxy = 4;
-    [SerializeField] float Miny = -4; 
+    [SerializeField] float Miny = -4;
+    [SerializeField] GameObject fireballPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class movingMomma : MonoBehaviour
     {
         float y = Input.GetAxis("Vertical");
         transform.Translate(speed * Time.deltaTime * y * Vector3.up);
+        Vector3 myvec = new Vector3(.84f, .44f, 0f);
 
         if (transform.position.y > Maxy)
         { 
@@ -26,6 +28,10 @@ public class movingMomma : MonoBehaviour
         if (transform.position.y < -4)
         {
             transform.position = new Vector3(transform.position.x, Miny, 0); //bounding the movement
+        }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(fireballPrefab, transform.position + myvec, transform.rotation);
         }
         /*if (Input.GetKey(KeyCode.UpArrow))
         {
