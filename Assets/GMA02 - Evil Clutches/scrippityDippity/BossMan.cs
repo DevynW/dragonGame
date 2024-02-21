@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class BossMan : MonoBehaviour
 {
-    [SerializeField] float speed = .01f;
+    [SerializeField] float speed = 3.2f;
     [SerializeField] float maxY = 5f;
     [SerializeField] float minY = -5f;
     [SerializeField] int limitDemon = 70;
     [SerializeField] GameObject babyPrefab;
     [SerializeField] GameObject baddiePrefab;
     bool goingUp = true;      //td = true if up, false if down
-    [SerializeField] int limSpit = 50;
+    //[SerializeField] int limSpit = 50;
+    [SerializeField] float fireRate = .5f;
+    float nextFire = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +26,11 @@ public class BossMan : MonoBehaviour
         
         if (goingUp == true) 
         {
-            transform.Translate(speed * Time.deltaTime * Vector3.up);
+            transform.Translate(speed * Time.deltaTime * Vector3.up, Space.World);
         }
         if (goingUp == false) 
         {
-            transform.Translate(speed * Time.deltaTime * Vector3.down);
+            transform.Translate(speed * Time.deltaTime * Vector3.down, Space.World);
         }
         if (transform.position.y > maxY) 
         {
@@ -38,9 +40,10 @@ public class BossMan : MonoBehaviour
         {
             goingUp = true;
         }
-        int spitRand = Random.Range(0, 100);
-        if (spitRand >= limSpit)
+        //int spitRand = Random.Range(0, 100);
+        if (Time.time >= nextFire)
         {
+            nextFire = Time.time + fireRate;
             int random = Random.Range(1, 400);
             if (random >= limitDemon)
             {
