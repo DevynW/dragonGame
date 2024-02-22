@@ -16,7 +16,7 @@ public class mover : MonoBehaviour
     void Update()
     {
         float speed;
-        float randspeed = Random.Range(2, 6);
+        float randspeed = Random.Range(1, 10);
         speed = randspeed;
         transform.Translate(speed * Time.deltaTime * Vector3.up, Space.Self);
         Destroy(gameObject, 5.5f);
