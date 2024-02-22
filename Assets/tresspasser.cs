@@ -21,7 +21,7 @@ public class tresspasser : MonoBehaviour
         {
             gameManager.score += 5;
         }
-        if (collision.gameObject.CompareTag("badGuy") == false)
+        if (collision.gameObject.CompareTag("badGuy") == true)
         {
             gameManager.score -= 1;
         }

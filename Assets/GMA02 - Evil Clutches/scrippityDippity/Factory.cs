@@ -5,7 +5,7 @@ using UnityEngine;
 public class Factory : MonoBehaviour
 {
     [SerializeField] float nextFire = 0f;
-    [SerializeField] float fireRate = .5f;
+    [SerializeField] float fireRate = .75f;
     [SerializeField] float limitBad = 85f;
     [SerializeField] GameObject goodPrefab;
     [SerializeField] GameObject badPrefab;

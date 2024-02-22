@@ -17,6 +17,7 @@ public class fireShots : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 myvec2 = new Vector3(1.5f, 0f, 0f);
         float y = Input.GetAxis("Vertical");
         transform.Translate(speed * Time.deltaTime * y * Vector3.up, Space.World);
         Vector3 myvec = new Vector3(.84f, .44f, 0f);
@@ -32,7 +33,7 @@ public class fireShots : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(fireballPrefab, transform.position, transform.rotation);
+            Instantiate(fireballPrefab, transform.position + myvec2, transform.rotation);
         }
       
     }

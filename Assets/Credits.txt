@@ -40,7 +40,12 @@ Logo -- Spectator Ship
 Link: https://thegamerwithkids.files.wordpress.com/2015/11/logo.png
 Author: the gamer with kids
 
-************
+Ambient Space 4.wav -- Background Music
 ------------
-Link: *************
-Author: ****************
+Link: https://freesound.org/people/DylanTheFish/sounds/442181/
+Author: DylanTheFish
+
+SFXsource.com-free-explosion-sound-effect.mp3 -- 'Splosion Sound
+------------
+Link: https://freesound.org/people/SFXsource.com/sounds/113977/
+Author: SFXsource.com

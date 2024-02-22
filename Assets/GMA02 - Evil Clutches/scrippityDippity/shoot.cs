@@ -20,18 +20,21 @@ public class shoot : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject go = GameObject.Find("GameManager");
-        Instantiate(explosion, collision.transform.position, collision.transform.rotation);
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
-        if (collision.gameObject.CompareTag("goodGuy") == true)
+        if (collision.gameObject.CompareTag("goodGuy") == true || collision.gameObject.CompareTag("badGuy") == true)
         {
-            gameManager.score -= 5;
+            GameObject go = GameObject.Find("GameManager");
+            Instantiate(explosion, collision.transform.position, collision.transform.rotation);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+            if (collision.gameObject.CompareTag("goodGuy") == true)
+            {
+                gameManager.score -= 5;
+            }
+            else if (collision.gameObject.CompareTag("badGuy") == true)
+            {
+                gameManager.score += 1;
+            }
+            Debug.Log("Shots: " + gameManager.score);
         }
-        else if (collision.gameObject.CompareTag("badGuy") == false)
-        {
-            gameManager.score += 1;
-        }
-        Debug.Log("Shots: " + gameManager.score);
     }
 }
