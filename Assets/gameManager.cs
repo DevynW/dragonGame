@@ -20,6 +20,8 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject TMPs;
     [SerializeField] GameObject blackBox;
     [SerializeField] GameObject TMPGo;
+    [SerializeField] GameObject whiteBox;
+    [SerializeField] GameObject factory;
     int finalTime;
     bool gameOver = false;
     Vector3 origin = Vector3.zero;
@@ -52,7 +54,9 @@ public class gameManager : MonoBehaviour
             TMPs.SetActive(false);
             TMPt.SetActive(false);
             TMPl.SetActive(false);
-            TMPGO.text = "Game Over!\nYour score was: " + score + ".\nYou had " + timeLeft + " time left.\nYou had " + lives + " lives left.";
+            whiteBox.SetActive(false);
+            factory.SetActive(false);   
+            TMPGO.text = "Game Over!\nYour score was: " + score + ".\nYou had " + timeLeft + " seconds left.\nYou had " + lives + " lives left.";
 
         }
     }

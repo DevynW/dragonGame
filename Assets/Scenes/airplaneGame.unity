@@ -379,6 +379,8 @@ MonoBehaviour:
   TMPs: {fileID: 416704047}
   blackBox: {fileID: 9048514708479686802, guid: ed373d92d59f057489b2113902297200, type: 3}
   TMPGo: {fileID: 1341273346}
+  whiteBox: {fileID: 750915367}
+  factory: {fileID: 1837394340}
 --- !u!4 &216693389
 Transform:
   m_ObjectHideFlags: 0
@@ -1758,6 +1760,10 @@ PrefabInstance:
     - target: {fileID: 5713177873532390049, guid: 6c9ae1ece1e012445b1c59435527c3ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931674073823717610, guid: 6c9ae1ece1e012445b1c59435527c3ab, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7931674073823717610, guid: 6c9ae1ece1e012445b1c59435527c3ab, type: 3}
       propertyPath: m_Enabled
