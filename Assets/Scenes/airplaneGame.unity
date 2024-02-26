@@ -373,7 +373,10 @@ MonoBehaviour:
   TMPS: {fileID: 416704049}
   TMPL: {fileID: 407027650}
   TMPT: {fileID: 185422921}
-  TMPGO: {fileID: 7931674073823717610, guid: 6c9ae1ece1e012445b1c59435527c3ab, type: 3}
+  TMPGO: {fileID: 1341273348}
+  TMPt: {fileID: 185422919}
+  TMPl: {fileID: 407027648}
+  TMPs: {fileID: 416704047}
   blackBox: {fileID: 9048514708479686802, guid: ed373d92d59f057489b2113902297200, type: 3}
   TMPGo: {fileID: 1341273346}
 --- !u!4 &216693389
@@ -1483,6 +1486,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5713177873532390049, guid: 6c9ae1ece1e012445b1c59435527c3ab, type: 3}
   m_PrefabInstance: {fileID: 1955754748}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1341273348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7931674073823717610, guid: 6c9ae1ece1e012445b1c59435527c3ab, type: 3}
+  m_PrefabInstance: {fileID: 1955754748}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341273346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1837394340
 GameObject:
   m_ObjectHideFlags: 0
