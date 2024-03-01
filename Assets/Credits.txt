@@ -49,3 +49,8 @@ SFXsource.com-free-explosion-sound-effect.mp3 -- 'Splosion Sound
 ------------
 Link: https://freesound.org/people/SFXsource.com/sounds/113977/
 Author: SFXsource.com
+
+Moora Light - Pretty Font
+-----------
+Link: https://www.dafont.com/moora-light.font
+Author: rmdndsign@gmail.com

@@ -25,7 +25,10 @@ public class manDown : MonoBehaviour
         {
             gameManager.lives -= 1;
             Instantiate(splosion, collision.transform.position, collision.transform.rotation);
-            Instantiate(self, ogPos, transform.rotation);
+            if (gameManager.lives > 0)
+            {
+                Instantiate(self, ogPos, transform.rotation);
+            }
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }

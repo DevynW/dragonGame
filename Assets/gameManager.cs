@@ -22,6 +22,7 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject TMPGo;
     [SerializeField] GameObject whiteBox;
     [SerializeField] GameObject factory;
+    [SerializeField] GameObject deadGuy;
     int finalTime;
     bool gameOver = false;
     Vector3 origin = Vector3.zero;
@@ -55,9 +56,16 @@ public class gameManager : MonoBehaviour
             TMPt.SetActive(false);
             TMPl.SetActive(false);
             whiteBox.SetActive(false);
-            factory.SetActive(false);   
-            TMPGO.text = "Game Over!\nYour score was: " + score + ".\nYou had " + timeLeft + " seconds left.\nYou had " + lives + " lives left.";
-
+            factory.SetActive(false);
+            deadGuy.SetActive(false);
+            if (lives <= 0)
+            {
+                TMPGO.text = "Game Over!\nYour score was: " + score + ".\nYou had " + timeLeft + " seconds left.\nYou had " + 0 + " lives left.";
+            }
+            else if(timeLeft <= 0)
+            {
+                TMPGO.text = "Game Over!\nYour score was: " + score + ".\nYou had " + 0 + " seconds left.\nYou had " + lives + " lives left.";
+            }
         }
     }
 }
